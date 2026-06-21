@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MARLON P. FAZA</title>
+
+    <style>
+
+        /********************************************************
+        CONFIGURAÇÕES GERAIS
+        ********************************************************/
+        body {
+            background-color: rgb(117, 115, 115);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /********************************************************
+        NAVBAR
+        ********************************************************/
+        .navbar {
+            background-color: blue;
+            padding: 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .navbar a:hover {
+            color: yellowgreen;
+            transform: scale(1.1);
+        }
+
+        /********************************************************
+        SEÇÕES
+        ********************************************************/
+        .secao {
+            background-color: white;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .secao:hover {
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+        }
+
+        /********************************************************
+        TÍTULOS E TEXTOS
+        ********************************************************/
+        .titulo {
+            color: darkred;
+            font-size: 35px;
+            text-align: center;
+        }
+
+        .subTitulo {
+            color: darkred;
+            font-size: 24px;
+        }
+
+        .texto {
+            color: darkgreen;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        /********************************************************
+        FORMULÁRIO
+        ********************************************************/
+        .input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        .textarea {
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        /********************************************************
+        BOTÃO
+        ********************************************************/
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: darkred;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            background-color: darkgreen;
+            transform: scale(0.95);
+        }
+
+        /********************************************************
+        RODAPÉ
+        ********************************************************/
+        .rodape {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <nav class="navbar">
+            <a href="#">HOME</a>
+            <a href="#">SOBRE</a>
+            <a href="#">PROJETOS</a>
+            <a href="#">TECNOLOGIAS</a>
+            <a href="#">CONTATO</a>
+        </nav>
+    </header>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container">
+        <!-- APRESENTAÇÃO -->
+        <section class="secao">
+            <h1 class="titulo">
+                Marlon P. Faza
+            </h1>
+ 
+            <p class="texto">
+                Analista de Tecnologia III
+                <br><br>
+                Especialista em Automação Industrial
+                <br><br>
+                Futuro Desenvolvedor Full Stack
+            </p>
+        </section>
+        <!-- SOBRE MIM -->
+        <section class="secao">
+            <h2 class="subTitulo">
+                Sobre Mim
+            </h2>
+ 
+            <p class="texto">
+                Possuo experiência em automação industrial,
+                robótica, indústria 4.0 e desenvolvimento
+                de soluções tecnológicas.
+
+                Atualmente estou realizando minha transição
+                para a área de Desenvolvimento Web Full Stack.
+            </p>
+        </section>
+        <!-- EXPERIÊNCIA -->
+        <section class="secao">
+            <h2 class="subTitulo">
+                Experiência Profissional
+            </h2>
+
+            <ul>
+                <li>Automação Industrial</li>
+                <li>Robótica Industrial</li>
+                <li>Robôs Colaborativos</li>
+                <li>Indústria 4.0</li>
+                <li>Siemens TIA Portal</li>
+                <li>OPC UA</li>
+                <li>Redes Industriais</li>
+                <li>Visão Computacional</li>
+                <li>Sistemas Supervisórios</li>
+            </ul>
+
+        </section>
+
+        <!-- CONTATO -->
+        <section class="secao">
+
+            <h2 class="subTitulo">
+                Contato
+            </h2>
+
+            <label>Nome:</label>
+            <input class="input" type="text">
+
+            <label>E-mail:</label>
+            <input class="input" type="email">
+
+            <label>Mensagem:</label>
+            <textarea class="textarea"></textarea>
+
+            <button>
+                Enviar
+            </button>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <p>Desenvolvido por Marlon P. Faza</p>
+        <p>Email: exemplo@email.com</p>
+        <p>LinkedIn</p>
+        <p>GitHub </p>
+    </footer>
+</body>
+</html>
