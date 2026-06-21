@@ -132,6 +132,54 @@
             padding: 20px;
             margin-top: 20px;
         }
+
+        .projetos{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        /*********************************************************
+        CARDS PARA PROJETO
+        *********************************************************/
+        .cardProjeto{
+
+            width: 300px;
+            background-color: bisque;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px;
+
+            box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .cardProjeto:hover{
+
+            transform: scale(1.05);
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+        }
+
+        /**************************************************
+        RESPONSIVIDADE
+        **************************************************/
+        @media (max-width: 768px){     /*Media Query*/
+            .navbar{
+                text-align: center;
+            }
+            .navbar a{
+                display: block;
+                margin: 10px 0;
+            }
+            .cardProjeto{
+                width: 90%;
+            }
+            .titulo{
+                font-size: 25px;
+            }
+        }
+
+
     </style>
 
 </head>
@@ -197,7 +245,64 @@
 
         </section>
 
+        <section class="secao">
+
+            <h2 class="subTitulo">
+                Projetos
+            </h2>
+
+            <div class="projetos">
+
+                <div class="cardProjeto">
+
+                    <h3>Automação Industrial 4.0</h3>
+
+                    <p>
+                        Projeto utilizando robôs colaborativos,
+                        sensores e integração digital.
+                    </p>
+
+                    <button>
+                        Ver Projeto
+                    </button>
+
+                </div>
+
+                <div class="cardProjeto">
+
+                    <h3>Integração OPC UA</h3>
+
+                    <p>
+                        Comunicação entre CLPs,
+                        supervisórios e banco de dados.
+                    </p>
+
+                    <button>
+                        Ver Projeto
+                    </button>
+
+                </div>
+
+                <div class="cardProjeto">
+
+                    <h3>Transição Full Stack</h3>
+
+                    <p>
+                        Desenvolvimento do meu portfólio
+                        e estudos em desenvolvimento web.
+                    </p>
+
+                    <button>
+                        Ver Projeto
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
         <!-- CONTATO -->
+         
         <section class="secao">
 
             <h2 class="subTitulo">
