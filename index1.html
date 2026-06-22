@@ -141,25 +141,15 @@
 
         /*********************************************************
         CARDS PARA PROJETO
-        *********************************************************/
-        .cardProjeto{
+        ********************************************************
 
-            width: 300px;
-            background-color: bisque;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 15px;
-
-            box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
-            transition: 0.3s;
-        }
 
         .cardProjeto:hover{
 
             transform: scale(1.05);
             box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
         }
-
+*/
         /**************************************************
         RESPONSIVIDADE
         **************************************************/
@@ -171,16 +161,38 @@
                 display: block;
                 margin: 10px 0;
             }
-            .cardProjeto{
-                width: 90%;
-            }
+
+            
             .titulo{
                 font-size: 25px;
             }
         }
 
+            /**************************************************
+            TRABALHANDO COM GRID
+            **************************************************/
+        .portifolio{
+            display: grid;
+            grid-template-columns:
+            repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
 
-    </style>
+        .cardProjeto{
+            background-color: bisque;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .cardProjeto:hover{
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 15px rgba(0,0,0,0.3);
+        }
+         
+   </style>
 
 </head>
 <body>
@@ -242,6 +254,58 @@
                 <li>Visão Computacional</li>
                 <li>Sistemas Supervisórios</li>
             </ul>
+
+        </section>
+
+        <section class="secao">
+
+            <h2 class="subTitulo">
+                Meus Projetos
+            </h2>
+
+            <div class="portifolio">
+
+                <div class="cardProjeto">
+
+                    <h3>Projeto Indústria 4.0</h3>
+
+                    <p>
+                        Sistema para monitoramento industrial utilizando OPC UA.
+                    </p>
+
+                </div>
+
+                <div class="cardProjeto">
+
+                    <h3>Robótica Colaborativa</h3>
+
+                    <p>
+                        Integração de robôs colaborativos em células industriais.
+                    </p>
+
+                </div>
+
+                <div class="cardProjeto">
+
+                    <h3>Visão Computacional</h3>
+
+                    <p>
+                        Sistema de inspeção automática por câmeras.
+                    </p>
+
+                </div>
+
+                <div class="cardProjeto">
+
+                    <h3>Full Stack Journey</h3>
+
+                    <p>
+                        Projeto da minha migração para Desenvolvimento Web.
+                    </p>
+
+                </div>
+
+            </div>
 
         </section>
 
